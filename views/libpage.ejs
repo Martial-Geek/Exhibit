@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library's Section</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a class="heading">LIBRARY</a>
+        </header>
+
+        <div class="content">
+            <div class="content_heading">
+
+                <a href="#" class="ebook">ONLINE BOOKS</a>
+                <a href="#" class="borrow">BORROWED BOOKS</a>
+                <a href="#" class="fine">FINE DETAILS</a>
+                <a href="#" class="alert">ALERT NOTIFICATION</a>
+            </div>
+            <div class="box_content">
+                <div class="maincontent">
+                   <table>
+                    <tr>
+                        <th>BOOK NAME</th>
+                        <th>AUTHOR NAME</th>
+                    </tr>
+                        <% foundBooks.forEach(function(book){ %>
+                            <tr>
+                                <td><%= book.title %></td>
+                            <td><%= book.authorName %></td>
+                            </tr>
+                            
+                        <% }); %>
+                            
+                    <tr>
+                        <td>Heyy</td>
+                        <td>Beyy</td>
+                    </tr>
+                    
+                   </table>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores illo quam est minima laudantium?
+                    Voluptatem quam necessitatibus minus ipsam voluptate iure, veritatis qui numquam eveniet veniam,
+                    blanditiis adipisci aperiam?50
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, obcaecati? Id ex dolores illum
+                    laborum nemo quibusdam expedita in sunt amet optio. Expedita provident dignissimos quia, dolores
+                    accusamus nisi nihil est sequi perspiciatis aliquam dicta corrupti illum, hic deserunt assumenda
+                    iure beatae incidunt at! Quo voluptatum ab inventore! Omnis officiis nostrum repudiandae. Veniam
+                    commodi culpa quibusdam recusandae veritatis quos error in, voluptatibus nihil voluptates eligendi
+                    facere tempore, ex quod! Suscipit, iste accusantium saepe error, porro quia deserunt aliquid libero
+                    optio excepturi illum a, nesciunt vitae officia quas nihil dolor reprehenderit quasi! Rerum tempora
+                    illo obcaecati id aperiam sequi molestiae numquam.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto consectetur eaque ullam
+                    expedita tempora iste dolores cupiditate molestias, esse ratione!
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit error ad impedit mollitia nostrum
+                    deserunt itaque commodi. Alias, itaque mollitia!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam culpa fugiat quidem
+                    reiciendis officiis inventore eos aut totam blanditiis.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
